@@ -1,11 +1,12 @@
 package one
 
 open class Car : Vehicle() {
-    //override val speed = "220 км/ч"
-    //override val color = "Красный"
+    override val speed = "220 км/ч"
+    override val color = "Красный"
     override val countOfWheels = "4"
+    override val name = "Audi"
     override fun displayinfo() {
-        println("Количество колёс у автомобиля: $countOfWheels")
+        //println("Количество колёс у автомобиля: $countOfWheels")
         super.displayinfo()
     }
 

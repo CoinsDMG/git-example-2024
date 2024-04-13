@@ -1,8 +1,11 @@
 package one
 
-class ElectricCar : Car(), FuelEfficient {
-    val batteryCapacity = ""
+open class ElectricCar : Car(), FuelEfficient {
+    open val batteryCapacity = "100 кВтч"
+    override val name = "Tesla"
+    override val speed = "280 км/ч"
+    override val color = "Белый"
     override fun fuelEfficiency() {
-        println("Зарядка от электричества")
+        println("Топливо: Зарядка от электричества, Ёмкость батареи: $batteryCapacity")
     }
 }
