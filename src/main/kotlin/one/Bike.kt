@@ -6,7 +6,10 @@ class Bike : Vehicle() {
     override val countOfWheels = "2"
 
     override fun displayinfo() {
-        println("Количество колёс у мотоцикла: $countOfWheels")
+        println("Количество колёс у велосипеда: $countOfWheels")
         super.displayinfo() // инфа из Vehicle
+    }
+    override fun makeSound() {
+        println("Тцзынь тцзынь!!! (Велосипед издает звонок.)")
     }
 }

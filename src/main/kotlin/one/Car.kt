@@ -8,4 +8,8 @@ class Car : Vehicle() {
         println("Количество колёс у автомобиля: $countOfWheels")
         super.displayinfo()
     }
+
+    override fun makeSound() {
+        println("Тууу Туууу!!! (Автомобиль издает гудок.)")
+    }
 }
