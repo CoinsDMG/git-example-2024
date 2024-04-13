@@ -1,6 +1,6 @@
 package one
 
-class Car : Vehicle() {
+open class Car : Vehicle() {
     //override val speed = "220 км/ч"
     //override val color = "Красный"
     override val countOfWheels = "4"
