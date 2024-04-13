@@ -1,9 +1,12 @@
 package one
 
 open class Bike : Vehicle() {
-    open val countOfWheels = ""
+    //override val speed = "180 км/ч"
+    //override val color = "Черный"
+    open val countOfWheels = "2"
 
     override fun displayinfo() {
-        println("Скорость: $speed n/ Цвет: $color")
+        println("Количество колёс у мотоцикла: $countOfWheels")
+        super.displayinfo() // инфа из Vehicle
     }
 }
