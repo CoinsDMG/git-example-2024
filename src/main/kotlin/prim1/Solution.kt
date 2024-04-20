@@ -1,3 +1,5 @@
+package prim1
+
 class Solution {
     fun plusOne(digits: IntArray): IntArray {
         for (i in digits.lastIndex downTo 0){
